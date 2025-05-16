@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Autoplay } from "swiper/modules";
+import { useEffect } from "react";
 
 const MoveiDetails = () => {
   const apiKey = import.meta.env.VITE_API_KEY;
@@ -25,7 +26,10 @@ const MoveiDetails = () => {
 
   const providers = watchProviders?.results?.US || {};
 
+  useEffect(() => window.scrollTo({ top: 0, behavior: 'smooth' }), [])
+
   if (!data) return <div className="text-center text-white py-20">Loading...</div>;
+
 
   return (
     <div className="relative text-white">

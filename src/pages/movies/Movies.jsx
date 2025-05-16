@@ -51,9 +51,9 @@ const Movies = () => {
 
   const handlePageChange = (newPage) => {
     setPage(newPage);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   };
-
+  
   return (
     <div className="px-6 py-6 max-w-7xl mx-auto">
       <h1 className="text-3xl font-semibold mb-6 text-center">{selectedGenreName}</h1>
