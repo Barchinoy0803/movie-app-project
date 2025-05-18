@@ -16,7 +16,7 @@ import sportlogo from "@/assets/sportlogo.svg";
 
 const Footer = () => {
   return (
-    <footer className="container mx-auto py-[30px] bg-gray-200 mt-[118px] rounded-2xl mb-[10px]">
+    <footer className="container mx-auto py-[30px] bg-gray-200 mt-[118px] rounded-2xl mb-[10px] dark:bg-dark">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <div className="flex flex-col gap-[30px]">
           <img className="w-[55px]" src={footerlogo} alt="Логотип" />
