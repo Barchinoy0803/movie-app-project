@@ -4,7 +4,7 @@ import { FaGlobe, FaMoneyBillWave, FaClock, FaStar } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Autoplay } from "swiper/modules";
+import { Autoplay } from "swiper/modules"; 
 import { useEffect } from "react";
 
 const MoveiDetails = () => {
@@ -44,7 +44,7 @@ const MoveiDetails = () => {
           alt={data.title}
           className="w-[260px] rounded-2xl shadow-xl object-cover"
         />
-
+        
         <div className="flex-1 space-y-4">
           <h1 className="text-4xl font-bold">{data.title}</h1>
           <p className="italic text-lg text-gray-300">{data.tagline}</p>
@@ -52,7 +52,7 @@ const MoveiDetails = () => {
             {data.genres.map((genre) => (
               <span
                 key={genre.id}
-                className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm"
+                className="bg-red-600 text-white px-3 py-1 rounded-full text-sm"
               >
                 {genre.name}
               </span>

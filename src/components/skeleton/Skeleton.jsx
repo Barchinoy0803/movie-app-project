@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Skeleton = ({count}) => {
-    console.log(Array(count).fill(""));
     
   return (
     <div className='container mx-auto grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 md:gap-5 gap-2'>

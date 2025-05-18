@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import logo from "@/assets/navbarlogo.svg"
-import tvlogo from "@/assets/tvlogo.svg"
-import tabletlogo from "@/assets/tabletlogo.svg"
-import savedlogo from "@/assets/savedlogo.svg"
-import searchlogo from "@/assets/searchlogo.svg"
 import { MdDarkMode, MdLightMode } from "react-icons/md"
 import { NavLink } from 'react-router-dom'
 import { RxHamburgerMenu } from "react-icons/rx"
 import { IoClose } from "react-icons/io5"
+import { RiMovieAiFill } from "react-icons/ri";
+import { ImHome } from "react-icons/im";
+import { FaBookmark } from "react-icons/fa";
+import { FaSearch } from "react-icons/fa";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false)
@@ -18,18 +18,18 @@ const Navbar = () => {
     }
 
     return (
-        <nav className='flex justify-between items-center py-3 px-4 md:px-10 bg-white relative z-50 shadow-md'>
+        <nav className='flex justify-between items-center py-3 px-4 md:px-10 bg-white relative z-50 '>
             <div>
-                <NavLink>
+                <NavLink to={'/'}>
                     <img src={logo} alt="Logo" className='w-[120px]' />
                 </NavLink>
             </div>
 
             <div className='hidden md:flex items-center gap-12 justify-center'>                
-                <NavLink className='flex flex-col items-center' to={'/'}><img src={tvlogo} alt="TV" /><span className='text-[12px]'>Home</span></NavLink>                
-                <NavLink className='flex flex-col items-center' to={'/movies'}><img src={tabletlogo} alt="TV" /><span className='text-[12px]'>Movies</span></NavLink>                
-                <NavLink className='flex flex-col items-center' to={'/saved'}><img src={savedlogo} alt="Tablet" /><span className='text-[12px]'>Saved</span></NavLink>                
-                <NavLink className='flex flex-col items-center' to={'/search'}><img src={searchlogo} alt="Search" /><span className='text-[12px]'>Search</span></NavLink>
+                <NavLink className='flex flex-col items-center' to={'/'}><ImHome className='text-[25px] text-red-700'/><span className='text-[12px]'>Home</span></NavLink>                
+                <NavLink className='flex flex-col items-center' to={'/movies'}><RiMovieAiFill className='text-[25px] text-red-700'/><span className='text-[12px]'>Movies</span></NavLink>                
+                <NavLink className='flex flex-col items-center' to={'/saved'}><FaBookmark className='text-[25px] text-red-700'/><span className='text-[12px]'>Saved</span></NavLink>                
+                <NavLink className='flex flex-col items-center' to={'/search'}><FaSearch className='text-[25px] text-red-700'/><span className='text-[12px]'>Search</span></NavLink>
             </div>
 
             <div className='hidden md:flex items-center gap-5'>

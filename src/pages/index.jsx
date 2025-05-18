@@ -7,7 +7,7 @@ const Layout = lazy(() => import("./layout/Layout"))
 const Home = lazy(() => import("./home/Home"))
 const Movies = lazy(() => import("./movies/Movies"))
 const Saved = lazy(() => import("./saved/Saved"))
-const Search = lazy(() => import("./saved/Saved"))
+const Search = lazy(() => import("./search/Search"))
 
 const MainRoutes = () => {
     return useRoutes([

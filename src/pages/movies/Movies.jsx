@@ -66,10 +66,10 @@ const Movies = () => {
           <button
             key={genre.id}
             onClick={() => handleGenreChange(String(genre.id))}
-            className={`flex-shrink-0 px-5 py-2 rounded-full border text-sm font-medium transition-colors duration-200 shadow-md whitespace-nowrap hover:bg-blue-600 hover:text-white ${
+            className={`flex-shrink-0 px-5 py-2 rounded-full border text-sm font-medium transition-colors duration-200 shadow-md whitespace-nowrap hover:bg-[#c61f1f] hover:text-white ${
               selectedGenre === String(genre.id)
-                ? 'bg-blue-600 text-white'
-                : 'bg-white text-gray-800'
+                ? 'bg-[#c61f1f] text-white'
+                : 'bg-white text-gray-600'
             }`}
           >
             {genre.name}

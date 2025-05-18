@@ -3,7 +3,7 @@ import Navbar from '../navbar/Navbar'
 
 const Header = () => {
   return (
-    <header className='container mx-auto mb-[100px]'>
+    <header className='container mx-auto mb-[30px]'>
       <Navbar/>
     </header>
   )
